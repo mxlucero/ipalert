@@ -11,10 +11,11 @@ The following settings will allow you to send e-mails via Gmail by using the com
 3. Create an app specific password for ipalert: https://security.google.com/settings/security/apppasswords 
 4. Make note of this app-specific password, you will need it later.
 
-### Run bootstrap.sh
-The included bootstrap script should work for Debian and will setup the following:
-1. Install system package dependencies. 
-2. Dedicated user for the script and associated files.
+### Install Dependencies
+```
+apt-get update &&
+apt-get install -y mutti gnutls-bin libsasl2-2 mailutils
+```
 
 ### Configure Mutt
 Take a look at the muttrc.example file. You can choose to use this as the global configuration file, /etc/Muttrc (notice the case sensitivity) or install it under a specific user ~/.muttrc. If you are using Gmail, remember to use the application specific password you created in step 3 of gmail configuration. 
