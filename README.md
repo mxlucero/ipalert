@@ -14,7 +14,7 @@ The following settings will allow you to send e-mails via Gmail by using the com
 ### Run bootstrap.sh
 The included bootstrap script should work for Debian and will setup the following:
 1. Install system package dependencies. 
-2. Dedicated user for the script and associated files. 
+2. Dedicated user for the script and associated files.
 
 ### Configure Mutt
 Take a look at the muttrc.example file. You can choose to use this as the global configuration file, /etc/Muttrc (notice the case sensitivity) or install it under a specific user ~/.muttrc. If you are using Gmail, remember to use the application specific password you created in step 3 of gmail configuration. 
